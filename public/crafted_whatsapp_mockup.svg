@@ -1,0 +1,181 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 920" width="460" height="920">
+  <defs>
+    <filter id="phone-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#000000" flood-opacity="0.85" />
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+    <linearGradient id="bezel-metal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4B5563" />
+      <stop offset="50%" stop-color="#1F2937" />
+      <stop offset="100%" stop-color="#111827" />
+    </linearGradient>
+    <linearGradient id="screen-glare" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.06" />
+      <stop offset="30%" stop-color="#ffffff" stop-opacity="0.01" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Phone Chassis with shadow -->
+  <g filter="url(#phone-shadow)">
+    <!-- Outer Titanium Bezel -->
+    <rect x="20" y="20" width="420" height="880" rx="56" fill="url(#bezel-metal)" stroke="#6B7280" stroke-width="2" />
+    <!-- Inner Dark Bezel -->
+    <rect x="26" y="26" width="408" height="868" rx="50" fill="#0A0D12" stroke="#000000" stroke-width="3" />
+    
+    <!-- Screen Area (Clip Path) -->
+    <g transform="translate(32, 32)">
+      <clipPath id="screen-clip">
+        <rect x="0" y="0" width="396" height="856" rx="44" />
+      </clipPath>
+      
+      <g clip-path="url(#screen-clip)">
+        <!-- WhatsApp Background -->
+        <rect x="0" y="0" width="396" height="856" fill="#EFEAE2" />
+        
+        <!-- WhatsApp Header -->
+        <rect x="0" y="0" width="396" height="96" fill="#008069" />
+        
+        <!-- Status Bar inside Header -->
+        <text x="32" y="28" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#ffffff">9:41</text>
+        
+        <!-- Signal / Wifi / Battery Icons -->
+        <g fill="#ffffff" transform="translate(324, 16)">
+          <!-- Cellular -->
+          <rect x="0" y="8" width="3" height="4" rx="0.5" />
+          <rect x="5" y="6" width="3" height="6" rx="0.5" />
+          <rect x="10" y="4" width="3" height="8" rx="0.5" />
+          <rect x="15" y="1" width="3" height="11" rx="0.5" />
+          <!-- Battery -->
+          <rect x="24" y="2" width="20" height="10" rx="3" fill="none" stroke="#ffffff" stroke-width="1.5" />
+          <rect x="26" y="4" width="14" height="6" rx="1.5" fill="#ffffff" />
+          <rect x="44" y="5" width="1.5" height="4" rx="0.5" />
+        </g>
+        
+        <!-- Dynamic Island -->
+        <rect x="136" y="12" width="124" height="30" rx="15" fill="#000000" />
+        <circle cx="236" cy="27" r="5" fill="#111827" />
+
+        <!-- Header Content: Back arrow, Avatar, Contact, Call Icons -->
+        <g transform="translate(16, 56)">
+          <!-- Back arrow -->
+          <path d="M12 4 L4 12 L12 20 M5 12 L22 12" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+          
+          <!-- Avatar Circle with Faucet Icon -->
+          <circle cx="44" cy="12" r="18" fill="#ffffff" />
+          <path d="M40 8 H48 V11 H45 V14 H43 V11 H40 Z M42 14 H46 V17 H42 Z" fill="#008069" />
+          <circle cx="44" cy="18" r="1.5" fill="#0284c7" />
+          
+          <!-- Contact Name & Subtitle -->
+          <text x="70" y="10" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="#ffffff">Plumbing Services</text>
+          <text x="70" y="24" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#D1FAE5">Official Verified Business</text>
+          
+          <!-- Video Call, Voice Call, More -->
+          <g fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <!-- Video -->
+            <rect x="254" y="4" width="15" height="12" rx="2" />
+            <path d="M269 8 L275 5 V15 L269 12 Z" fill="#ffffff" />
+            <!-- Phone -->
+            <path d="M298 6 C303 6 308 11 308 16 C308 20 302 24 297 22 C293 20 290 17 288 13 C286 8 290 2 294 2 L297 6 Z" />
+            <!-- 3 Dots -->
+            <circle cx="334" cy="7" r="1.5" fill="#ffffff" />
+            <circle cx="334" cy="13" r="1.5" fill="#ffffff" />
+            <circle cx="334" cy="19" r="1.5" fill="#ffffff" />
+          </g>
+        </g>
+
+        <!-- CHAT BUBBLE 1: Customer (Outgoing Green, Right) -->
+        <g transform="translate(68, 115)">
+          <rect x="0" y="0" width="312" height="74" rx="14" fill="#E7FFDB" />
+          <path d="M312 8 L320 16 L312 24 Z" fill="#E7FFDB" />
+          <text x="14" y="22" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13.5" fill="#111827">
+            <tspan x="14" dy="0">Hi, my kitchen drain is completely</tspan>
+            <tspan x="14" dy="18">blocked and water is standing in</tspan>
+            <tspan x="14" dy="18">the sink. Can someone come</tspan>
+          </text>
+          <text x="14" y="78" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13.5" fill="#111827"></text>
+          <text x="242" y="65" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#6B7280">11:52</text>
+          <!-- Double blue tick -->
+          <path d="M276 61 L280 65 L288 56 M282 65 L290 56" stroke="#34B7F1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+        </g>
+
+        <!-- CHAT BUBBLE 2: AI Dispatch (Incoming White, Left) -->
+        <g transform="translate(16, 205)">
+          <rect x="8" y="0" width="324" height="232" rx="14" fill="#FFFFFF" />
+          <path d="M8 8 L0 16 L8 24 Z" fill="#FFFFFF" />
+          <text x="22" y="24" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13.5" fill="#111827">
+            <tspan x="22" dy="0">Hi, we can definitely unblock that</tspan>
+            <tspan x="22" dy="20">for you tomorrow.</tspan>
+            <tspan x="22" dy="26" font-weight="700">Service: </tspan>
+            <tspan font-weight="400">Drain unblocking and</tspan>
+            <tspan x="22" dy="18">high-pressure jetting.</tspan>
+            <tspan x="22" dy="26" font-weight="700">Rate: </tspan>
+            <tspan font-weight="400">From R850 per blocked point.</tspan>
+            <tspan x="22" dy="30">We have slots open tomorrow:</tspan>
+            <tspan x="22" dy="20">10:00 AM &amp; 14:00 PM. Would 10:00</tspan>
+            <tspan x="22" dy="20">AM work for you?</tspan>
+          </text>
+          <text x="286" y="222" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#6B7280">13:50</text>
+        </g>
+
+        <!-- CHAT BUBBLE 3: Customer (Outgoing Green, Right) -->
+        <g transform="translate(94, 452)">
+          <rect x="0" y="0" width="286" height="56" rx="14" fill="#E7FFDB" />
+          <path d="M286 8 L294 16 L286 24 Z" fill="#E7FFDB" />
+          <text x="14" y="22" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13.5" fill="#111827">
+            <tspan x="14" dy="0">Yes, tomorrow at 10:00 AM is</tspan>
+            <tspan x="14" dy="20">perfect for me. 14 Main Road.</tspan>
+          </text>
+          <text x="216" y="47" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#6B7280">13:50</text>
+          <!-- Double blue tick -->
+          <path d="M250 43 L254 47 L262 38 M256 47 L264 38" stroke="#34B7F1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+        </g>
+
+        <!-- CHAT BUBBLE 4: AI Dispatch (Incoming White, Left) -->
+        <g transform="translate(16, 524)">
+          <rect x="8" y="0" width="316" height="88" rx="14" fill="#FFFFFF" />
+          <path d="M8 8 L0 16 L8 24 Z" fill="#FFFFFF" />
+          <text x="22" y="24" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="13.5" fill="#111827">
+            <tspan x="22" dy="0">Booking confirmed! Our technician</tspan>
+            <tspan x="22" dy="20">will arrive at 10:00 AM. If anything</tspan>
+            <tspan x="22" dy="20">changes, simply reply here.</tspan>
+          </text>
+          <text x="276" y="78" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#6B7280">13:55</text>
+        </g>
+
+        <!-- Bottom Input Bar -->
+        <g transform="translate(12, 770)">
+          <!-- Input Pill -->
+          <rect x="0" y="0" width="316" height="48" rx="24" fill="#FFFFFF" />
+          <!-- Smile -->
+          <circle cx="26" cy="24" r="10" stroke="#6B7280" stroke-width="1.8" fill="none" />
+          <circle cx="22" cy="21" r="1.5" fill="#6B7280" />
+          <circle cx="30" cy="21" r="1.5" fill="#6B7280" />
+          <path d="M21 27 Q26 31 31 27" stroke="#6B7280" stroke-width="1.8" fill="none" stroke-linecap="round" />
+          
+          <text x="50" y="29" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="#9CA3AF">Message</text>
+          
+          <!-- Paperclip -->
+          <path d="M236 28 L244 19 C247 16 252 16 254 19 C257 22 257 26 254 29 L241 40 C236 44 230 44 226 40 C222 36 222 30 226 26 L239 15" stroke="#6B7280" stroke-width="1.8" fill="none" stroke-linecap="round" />
+          
+          <!-- Camera -->
+          <g fill="#6B7280" transform="translate(276, 15)">
+            <path d="M3 4 L6 1 H14 L17 4 H20 C21 4 22 5 22 6 V16 C22 17 21 18 20 18 H2 C1 18 0 17 0 16 V6 C0 5 1 4 2 4 Z" fill="none" stroke="#6B7280" stroke-width="1.6" />
+            <circle cx="11" cy="11" r="4" fill="none" stroke="#6B7280" stroke-width="1.6" />
+          </g>
+
+          <!-- Green Send / Mic Button -->
+          <circle cx="348" cy="24" r="24" fill="#00A884" />
+          <!-- Send Arrow Icon -->
+          <path d="M342 16 L358 24 L342 32 L346 24 Z" fill="#FFFFFF" />
+        </g>
+
+        <!-- Home Indicator Bar -->
+        <rect x="134" y="842" width="128" height="4.5" rx="2.25" fill="#111827" />
+        
+        <!-- Screen subtle glare diagonal -->
+        <rect x="0" y="0" width="396" height="856" fill="url(#screen-glare)" pointer-events="none" />
+      </g>
+    </g>
+  </g>
+</svg>

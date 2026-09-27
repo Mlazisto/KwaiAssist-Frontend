@@ -1,0 +1,6 @@
+{
+  "name": "KwaiAssist — WhatsApp & Social AI Assistant for South African Businesses",
+  "description": "Automate quotes, schedule client bookings, and respond to WhatsApp & social inquiries 24/7 in South African Rands (ZAR). Built specifically for local service businesses.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
